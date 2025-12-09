@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fatima’s Portfolio</title>
+<style>
+/* -------- GENERAL STYLES -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* -------- HEADER / NAVBAR -------- */
+header {
+  background-color: #e8f0fe;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header a {
+  text-decoration: none;
+  color: #2c3e50;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #4a90e2;
+}
+
+/* -------- SECTIONS -------- */
+section {
+  padding: 50px 10%;
+  border-bottom: 1px solid #ddd;
+  background-color: #fafcff;
+}
+
+section h2 {
+  color: #2c3e50;
+  border-left: 4px solid #4a90e2;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* -------- HOME SECTION -------- */
+#home {
+  background: linear-gradient(135deg, #f8f9ff, #eef3fb);
+  text-align: center;
+  padding-top: 80px;
+}
+
+.intro {
+  background-color: #eaf1ff;
+  border-left: 4px solid #4a90e2;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* -------- EDUCATION SECTION -------- */
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.edu-card {
+  background-color: #ffffff;
+  border: 1px solid #d9e4ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  flex: 1 1 30%;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #d0e3ff;
+}
+
+.edu-card h3 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  line-height: 1.6;
+}
+
+/* GPA Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+caption {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+/* -------- PROJECTS -------- */
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 10px;
+}
+
+/* -------- EXPERIENCE -------- */
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.exp-card {
+  background-color: #ffffff;
+  border: 1px solid #d9e4ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  flex: 1 1 45%;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #d0e3ff;
+}
+
+.exp-card h3 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.exp-card p, .exp-card ul {
+  line-height: 1.6;
+}
+
+.exp-card ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* -------- CONTACT -------- */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+input[type="submit"] {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #2c6dd2;
+}
+
+/* -------- FOOTER -------- */
+footer {
+  background-color: #e8f0fe;
+  text-align: center;
+  padding: 15px 0;
+  color: #333;
+  font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <a href="#home">Home</a>
+  <a href="#education">Education</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</header>
+
+<!-- HOME SECTION -->
+<section id="home">
+  <h1>Welcome to My Portfolio</h1>
+  <p>This is my personal portfolio made using HTML and CSS.</p>
+  <div class="intro">
+    <p>
+      Hello! I’m <b>Fatima Nadeem</b>, a passionate Computer Science student at 
+      the National University of Computer and Emerging Sciences. I love building 
+      projects, exploring new technologies, and participating in events and societies 
+      to develop my skills and contribute to my community.
+    </p>
+  </div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="education-container">
+    <div class="edu-card">
+      <h3>School</h3>
+      <p>
+        <b>Name:</b> Multan Public School <br>
+        <b>Marks:</b> 1089 / 1100 <br>
+        <b>Percentage:</b> 99% <br>
+        <b>Passing Year:</b> 2021
+      </p>
+    </div>
+
+    <div class="edu-card">
+      <h3>College</h3>
+      <p>
+        <b>Name:</b> Nishat College of Science for Girls <br>
+        <b>Domain:</b> Pre-Engineering <br>
+        <b>Marks:</b> 861 / 1100 <br>
+        <b>Percentage:</b> 78.27% <br>
+        <b>Passing Year:</b> 2023
+      </p>
+    </div>
+
+    <div class="edu-card">
+      <h3>University</h3>
+      <p>
+        <b>Name:</b> National University of Computer and Emerging Sciences <br>
+        <b>Degree:</b> Bachelors in Computer Science <br>
+        <b>Starting Year:</b> 2023 <br>
+        <b>Passing Year:</b> 2027
+      </p>
+
+      <table>
+        <caption>Semester GPA</caption>
+        <thead>
+          <tr><th>GPA 1</th><th>GPA 2</th><th>GPA 3</th><th>GPA 4</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2.3</td><td>3.0</td><td>2.7</td><td>3.1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li>Candy Crush (C++)</li>
+    <li>Debugging of old code of Candy Crush game</li>
+    <li>Pac-Man (C++)</li>
+    <li>Drive Manager (C++)</li>
+    <li>Ping Pong Multiplayer (Assembly Language)</li>
+    <li>Catcher Game (C++)</li>
+    <li>Hospital Website (HTML, CSS, JavaScript)</li>
+    <li>Sortify: Discrete Edition</li>
+  </ul>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="experience-container">
+    <div class="exp-card">
+      <h3>Internship</h3>
+      <p><b>Organization:</b> National University of Computer and Emerging Sciences</p>
+      <p><b>Role:</b> Admission Campaign Internee</p>
+      <p><b>Duration:</b> June 2025 - August 2025</p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Societies & Activities</h3>
+      <ul>
+        <li><b>Usher</b> – Job Fair (2024)</li>
+        <li><b>Event Organizer</b> – Management Team, DAIRA 2024</li>
+        <li><b>Media & Marketing Team</b> – TEDxFAST (2024)</li>
+        <li><b>Marketing Team</b> – AIESEC (2024)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Enter your name" required>
+    <input type="email" placeholder="Enter your email" required>
+    <textarea placeholder="Drop your queries" rows="5"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+<footer>
+  Fatima Nadeem
+</footer>
+
+</body>
+</html>
