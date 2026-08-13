@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fatima’s Portfolio</title>
+
+<title>Fatima Nadeem | Portfolio</title>
+
 <style>
+
 /* -------- GENERAL STYLES -------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +24,9 @@ body {
   color: #333;
 }
 
+
 /* -------- HEADER / NAVBAR -------- */
+
 header {
   background-color: #e8f0fe;
   padding: 15px 0;
@@ -42,7 +49,9 @@ header a:hover {
   color: #4a90e2;
 }
 
+
 /* -------- SECTIONS -------- */
+
 section {
   padding: 50px 10%;
   border-bottom: 1px solid #ddd;
@@ -56,11 +65,23 @@ section h2 {
   margin-bottom: 20px;
 }
 
+
 /* -------- HOME SECTION -------- */
+
 #home {
   background: linear-gradient(135deg, #f8f9ff, #eef3fb);
   text-align: center;
   padding-top: 80px;
+}
+
+#home h1 {
+  margin-bottom: 10px;
+}
+
+.positioning {
+  color: #4a90e2;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .intro {
@@ -74,7 +95,9 @@ section h2 {
   color: #2c3e50;
 }
 
+
 /* -------- EDUCATION SECTION -------- */
+
 .education-container {
   display: flex;
   flex-wrap: wrap;
@@ -107,33 +130,44 @@ section h2 {
   line-height: 1.6;
 }
 
-/* GPA Table */
+
+/* -------- GPA TABLE -------- */
+
 table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 15px;
 }
-table, th, td {
+
+table,
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
 }
+
 caption {
   margin-bottom: 10px;
   font-weight: bold;
   color: #4a90e2;
 }
 
+
 /* -------- PROJECTS -------- */
+
 ul {
   list-style-type: circle;
   padding-left: 20px;
 }
+
 ul li {
   margin-bottom: 10px;
 }
 
+
 /* -------- EXPERIENCE -------- */
+
 .experience-container {
   display: flex;
   flex-wrap: wrap;
@@ -161,7 +195,8 @@ ul li {
   margin-bottom: 10px;
 }
 
-.exp-card p, .exp-card ul {
+.exp-card p,
+.exp-card ul {
   line-height: 1.6;
 }
 
@@ -170,8 +205,56 @@ ul li {
   padding-left: 20px;
 }
 
+
+/* -------- FUTURE WORK / CAPSTONE -------- */
+
+.future-work {
+  background-color: #eef4ff;
+  border: 1px solid #d9e4ff;
+  border-radius: 10px;
+  padding: 25px;
+  line-height: 1.7;
+}
+
+.future-work p {
+  margin-bottom: 10px;
+}
+
+
+/* -------- PROFESSIONAL LINKS -------- */
+
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.link-button {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link-button:hover {
+  background-color: #2c6dd2;
+  transform: translateY(-2px);
+}
+
+
 /* -------- CONTACT -------- */
-input, textarea {
+
+.contact-text {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -179,6 +262,7 @@ input, textarea {
   margin-bottom: 15px;
   font-size: 1rem;
 }
+
 input[type="submit"] {
   background-color: #4a90e2;
   color: white;
@@ -186,11 +270,14 @@ input[type="submit"] {
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
 input[type="submit"]:hover {
   background-color: #2c6dd2;
 }
 
+
 /* -------- FOOTER -------- */
+
 footer {
   background-color: #e8f0fe;
   text-align: center;
@@ -198,48 +285,92 @@ footer {
   color: #333;
   font-size: 0.9rem;
 }
+
 </style>
 </head>
 
+
 <body>
+
+
+<!-- -------- NAVIGATION -------- -->
+
 <header>
+
   <a href="#home">Home</a>
+
   <a href="#education">Education</a>
+
   <a href="#projects">Projects</a>
+
   <a href="#experience">Experience</a>
+
+  <a href="#future">Future Work</a>
+
   <a href="#contact">Contact</a>
+
 </header>
 
-<!-- HOME SECTION -->
+
+<!-- -------- HOME SECTION -------- -->
+
 <section id="home">
+
   <h1>Welcome to My Portfolio</h1>
- <p>Computer Science Student | Software Developer | Full Stack & Game Development Enthusiast</p>
+
+  <p class="positioning">
+    Computer Science Student | Software Developer | AI & Full-Stack Development Enthusiast
+  </p>
+
   <div class="intro">
-    
-     <p>
-Hello! I'm <b>Fatima Nadeem</b>, a Computer Science student at FAST – National University of Computer and Emerging Sciences. I enjoy developing software solutions, building full stack web applications, and creating interactive games using Unity. My interests include web development, machine learning, artificial intelligence, and UI/UX design. Through academic projects, internships, and extracurricular activities, I continuously strive to improve my technical and problem-solving skills while building practical applications.
-</p>
-    
+
+    <p>
+      Hello! I'm <b>Fatima Nadeem</b>, a Computer Science student at FAST –
+      National University of Computer and Emerging Sciences. I enjoy developing
+      software solutions, building full stack web applications, and creating
+      interactive games using Unity. My interests include web development,
+      machine learning, artificial intelligence, and UI/UX design. Through
+      academic projects, internships, and extracurricular activities, I
+      continuously strive to improve my technical and problem-solving skills
+      while building practical applications.
+    </p>
+
   </div>
+
 </section>
 
-<!-- EDUCATION SECTION -->
+
+<!-- -------- EDUCATION SECTION -------- -->
+
 <section id="education">
+
   <h2>Education</h2>
 
   <div class="education-container">
+
+
+    <!-- SCHOOL -->
+
     <div class="edu-card">
+
       <h3>School</h3>
+
       <p>
         <b>Name:</b> Multan Public School <br>
         <b>Marks:</b> 1089 / 1100 <br>
         <b>Percentage:</b> 99% <br>
         <b>Passing Year:</b> 2021
       </p>
+
     </div>
 
+
+    <!-- COLLEGE -->
+
     <div class="edu-card">
+
       <h3>College</h3>
+
       <p>
         <b>Name:</b> Nishat College of Science for Girls <br>
         <b>Domain:</b> Pre-Engineering <br>
@@ -247,10 +378,16 @@ Hello! I'm <b>Fatima Nadeem</b>, a Computer Science student at FAST – National
         <b>Percentage:</b> 78.27% <br>
         <b>Passing Year:</b> 2023
       </p>
+
     </div>
 
+
+    <!-- UNIVERSITY -->
+
     <div class="edu-card">
+
       <h3>University</h3>
+
       <p>
         <b>Name:</b> National University of Computer and Emerging Sciences <br>
         <b>Degree:</b> Bachelors in Computer Science <br>
@@ -258,106 +395,292 @@ Hello! I'm <b>Fatima Nadeem</b>, a Computer Science student at FAST – National
         <b>Passing Year:</b> 2027
       </p>
 
+
+      <!-- GPA TABLE -->
+
       <table>
-  <caption>Semester GPA</caption>
-  <thead>
-    <tr>
-      <th>Semester 1</th>
-      <th>Semester 2</th>
-      <th>Semester 3</th>
-      <th>Semester 4</th>
-      <th>Semester 5</th>
-      <th>Semester 6</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2.3</td>
-      <td>3.0</td>
-      <td>2.7</td>
-      <td>3.1</td>
-      <td>2.7</td>
-      <td>2.6</td>
-    </tr>
-  </tbody>
-</table>
 
-<!-- PROJECTS SECTION -->
-<section id="projects">
-  <h2>Projects</h2>
- <ul>
-  <li><strong>Forest Escape</strong> – 3D Unity survival game featuring character transformations, stealth mechanics, and resource management.</li>
+        <caption>Semester GPA</caption>
 
-  <li><strong>Gamified Learning Platform</strong> – Full Stack MERN web application that makes learning interactive through quizzes, achievements, and gamification features.</li>
+        <thead>
 
-  <li><strong>Hospital Management Website</strong> – Responsive website built using HTML, CSS, and JavaScript for managing hospital information and services.</li>
+          <tr>
+            <th>Semester 1</th>
+            <th>Semester 2</th>
+            <th>Semester 3</th>
+            <th>Semester 4</th>
+            <th>Semester 5</th>
+            <th>Semester 6</th>
+          </tr>
 
-  <li><strong>Core Banking System</strong> – Banking management system developed using PHP and SQL with secure account and transaction handling.</li>
+        </thead>
 
-  <li><strong>Candy Crush Clone</strong> – Console-based C++ implementation of the classic Candy Crush game.</li>
+        <tbody>
 
-  <li><strong>Pac-Man Clone</strong> – C++ implementation of the classic Pac-Man game featuring player movement and enemy AI.</li>
+          <tr>
+            <td>2.3</td>
+            <td>3.0</td>
+            <td>2.7</td>
+            <td>3.1</td>
+            <td>2.7</td>
+            <td>2.6</td>
+          </tr>
 
-  <li><strong>Drive Manager</strong> – C++ application for managing files and directories.</li>
+        </tbody>
 
-  <li><strong>Ping Pong Multiplayer</strong> – Multiplayer Assembly Language game developed using low-level programming concepts.</li>
+      </table>
 
-  <li><strong>Catcher Game</strong> – Arcade-style C++ game focusing on collision detection and scoring mechanics.</li>
+    </div>
 
-  <li><strong>Sortify: Discrete Edition</strong> – Educational application demonstrating discrete mathematics concepts through interactive visualization.</li>
-</ul>
+  </div>
+
 </section>
-<!-- EXPERIENCE SECTION -->
+
+
+<!-- -------- PROJECTS SECTION -------- -->
+
+<section id="projects">
+
+  <h2>Projects</h2>
+
+  <ul>
+
+    <li>
+      <strong>Forest Escape</strong> – 3D Unity survival game featuring
+      character transformations, stealth mechanics, and resource management.
+    </li>
+
+    <li>
+      <strong>Gamified Learning Platform</strong> – Full Stack MERN web
+      application that makes learning interactive through quizzes,
+      achievements, and gamification features.
+    </li>
+
+    <li>
+      <strong>Hospital Management Website</strong> – Responsive website built
+      using HTML, CSS, and JavaScript for managing hospital information and services.
+    </li>
+
+    <li>
+      <strong>Core Banking System</strong> – Banking management system developed
+      using PHP and SQL with secure account and transaction handling.
+    </li>
+
+    <li>
+      <strong>Candy Crush Clone</strong> – Console-based C++ implementation
+      of the classic Candy Crush game.
+    </li>
+
+    <li>
+      <strong>Pac-Man Clone</strong> – C++ implementation of the classic
+      Pac-Man game featuring player movement and enemy AI.
+    </li>
+
+    <li>
+      <strong>Drive Manager</strong> – C++ application for managing files
+      and directories.
+    </li>
+
+    <li>
+      <strong>Ping Pong Multiplayer</strong> – Multiplayer Assembly Language
+      game developed using low-level programming concepts.
+    </li>
+
+    <li>
+      <strong>Catcher Game</strong> – Arcade-style C++ game focusing on
+      collision detection and scoring mechanics.
+    </li>
+
+    <li>
+      <strong>Sortify: Discrete Edition</strong> – Educational application
+      demonstrating discrete mathematics concepts through interactive visualization.
+    </li>
+
+  </ul>
+
+</section>
+
+
+<!-- -------- EXPERIENCE SECTION -------- -->
+
 <section id="experience">
+
   <h2>Experience</h2>
 
   <div class="experience-container">
 
+
+    <!-- ADMISSION CAMPAIGN -->
+
     <div class="exp-card">
+
       <h3>Admission Campaign Internee</h3>
-      <p><b>Organization:</b> FAST - National University of Computer and Emerging Sciences</p>
-      <p><b>Duration:</b> June 2025 – August 2025</p>
-      <p>Supported the university admission campaign by assisting prospective students, organizing admission activities, and representing the university during outreach events.</p>
+
+      <p>
+        <b>Organization:</b>
+        FAST - National University of Computer and Emerging Sciences
+      </p>
+
+      <p>
+        <b>Duration:</b> June 2025 – August 2025
+      </p>
+
+      <p>
+        Supported the university admission campaign by assisting prospective
+        students, organizing admission activities, and representing the
+        university during outreach events.
+      </p>
+
     </div>
 
+
+    <!-- INTERNSHIPS -->
+
     <div class="exp-card">
+
       <h3>Current Internships</h3>
-      <ul>
-        <li><b>FlyRank AI Internship</b><br>
-        AI Fluency Program (Ongoing)</li>
 
-        <li><b>Scorton Internship</b><br>
-        Machine Learning, Artificial Intelligence & AI Pipelining (Ongoing)</li>
+      <ul>
+
+        <li>
+          <b>FlyRank AI Internship</b><br>
+          AI Fluency Program (Ongoing)
+        </li>
+
+        <li>
+          <b>Scorton Internship</b><br>
+          Machine Learning, Artificial Intelligence & AI Pipelining (Ongoing)
+        </li>
+
       </ul>
+
     </div>
 
+
+    <!-- LEADERSHIP -->
+
     <div class="exp-card">
+
       <h3>Leadership & Activities</h3>
+
       <ul>
+
         <li>Usher – FAST Job Fair (2024)</li>
+
         <li>Event Organizer – Management Team, DAIRA 2024</li>
+
         <li>Media & Marketing Team – TEDxFAST (2024)</li>
+
         <li>Marketing Team – AIESEC (2024)</li>
+
       </ul>
+
     </div>
 
   </div>
+
 </section>
 
-<!-- CONTACT SECTION -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form>
-    <input type="text" placeholder="Enter your name" required>
-    <input type="email" placeholder="Enter your email" required>
-    <textarea placeholder="Drop your queries" rows="5"></textarea>
-    <input type="submit" value="Submit">
-  </form>
+
+<!-- -------- FUTURE WORK / CAPSTONE -------- -->
+
+<section id="future">
+
+  <h2>Future Work & Capstone</h2>
+
+  <div class="future-work">
+
+    <p>
+      This section will be updated with my FlyRank capstone project,
+      technical posts, and future work.
+    </p>
+
+    <p>
+      I plan to use this space to document projects, technical learning,
+      and other work developed throughout my career.
+    </p>
+
+  </div>
+
 </section>
+
+
+<!-- -------- CONTACT SECTION -------- -->
+
+<section id="contact">
+
+  <h2>Contact Me</h2>
+
+  <p class="contact-text">
+    You can connect with me through my professional profiles, download my CV,
+    or book a meeting using the links below.
+  </p>
+
+
+  <div class="links-container">
+
+
+    <!-- LINKEDIN -->
+
+    <a
+      class="link-button"
+      href="https://www.linkedin.com/in/fatima-nadeem-702a24327"
+      target="_blank"
+      rel="noopener noreferrer">
+      LinkedIn
+    </a>
+
+
+    <!-- GITHUB -->
+
+    <a
+      class="link-button"
+      href="https://github.com/FatimaNdeem"
+      target="_blank"
+      rel="noopener noreferrer">
+      GitHub
+    </a>
+
+
+    <!-- CV -->
+
+    <!--
+      Put your CV PDF in the same folder as index.html.
+      Name the file: Fatima_Nadeem_CV.pdf
+    -->
+
+    <a
+      class="link-button"
+      href="Fatima_Nadeem_CV.pdf"
+      download>
+      Download CV
+    </a>
+
+
+    <!-- CALENDLY BOOKING -->
+
+    <a
+      class="link-button"
+      href="https://calendly.com/fatimawapda019"
+      target="_blank"
+      rel="noopener noreferrer">
+      Book a Meeting
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- -------- FOOTER -------- -->
 
 <footer>
-  Fatima Nadeem
+
+  Fatima Nadeem | Portfolio
+
 </footer>
 
+
 </body>
+
 </html>
